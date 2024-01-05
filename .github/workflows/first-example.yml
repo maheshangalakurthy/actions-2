@@ -7,10 +7,16 @@ jobs:
       - name: git checkout
         uses: actions/checkout@v4
 
-      - name: Welcome Message
-        run: echo "My 1st Github actions workflow"
+      - name: List and Read files
+        run: |
+          echo "My 1st Github actions workflow"
+          ls
+          cat README.md
 
-      - name: kist all files
-        run: ls
-      - name: Read file
-        run: cat README.md
+      - name: Generate ASCII Artwork
+        run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
+
+      # - name: kist all files
+      #   run: ls
+      # - name: Read file
+      #   run: cat README.md
