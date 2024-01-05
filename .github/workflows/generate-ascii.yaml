@@ -13,4 +13,4 @@ jobs:
       - name: Execute Shell scipt
         run: |
           chmod +x ascii-script.sh 
-          ./ascii-script.sh
+          bash ascii-script.sh
