@@ -4,10 +4,13 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
+      - name: git checkout
+        uses: actions/checkout@v4
+
       - name: Welcome Message
         run: echo "My 1st Github actions workflow"
 
       - name: kist all files
-        run: List files
+        run: ls
       - name: Read file
         run: cat README.md
